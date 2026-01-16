@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, please privately report it via the Security tab on the correct GitHub repository ([see documentation](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability). Do not open a public issue. Provide:
+To report a vulnerability, please privately report it via the Security tab on the correct GitHub repository ([see documentation](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability)). Do not open a public issue. Provide:
 
 - A clear description of the issue
 - Steps to reproduce
@@ -36,3 +36,9 @@ Out of scope:
 ## Disclosure
 
 Please keep reports private until a fix is released and a Security Advisory is public.
+
+## CVE Publication
+
+By default, we do not publish CVEs for vulnerabilities solely affecting experimental features, though we may opt to publish one if the vulnerability is unusually severe or easy to exploit. An experimental feature is one that is clearly gated behind an `experimental.{name}` configuration flag.
+
+We reserve the right to publish our own CVEs. Please do not pre-reserve CVE records or attempt to publish your own CVE. If we do publish a CVE, we will ensure you receive credit for your discovery and any work you may do to help patch it.
