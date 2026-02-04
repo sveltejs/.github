@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, please privately report it via the Security tab on the correct GitHub repository ([see documentation](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability)). Do not open a public issue. Provide:
+To report a vulnerability, please privately report it on [Vercel's Open Source bounty program on HackerOne](https://hackerone.com/vercel-open-source). If that is not possible for some reason, you can use the security tab on the correct GitHub repository as a fallback ([see documentation](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability)), but it's not recommended (you'll get no bounty, for example). Do not open a public issue. Please refer to the Vercel Open Source program instruction for details. In general you need to provide:
 
 - A clear description of the issue
 - Steps to reproduce
@@ -11,13 +11,11 @@ To report a vulnerability, please privately report it via the Security tab on th
 - A proof of concept if possible
 - Affected commit / version (if known)
 
-## Acknowledgment Timeline
+## Timeline
 
-We aim to acknowledge receipt of a valid report within 1 week.
+If you report the vulnerability through HackerOne, the timelines mentioned there apply.
 
-## Resolution Timeline
-
-We aim to provide a remediation plan or decision within 4 weeks. Actual fix time may be shorter or longer depending on severity, complexity, and scope.
+If a security vulnerability is reported outside of this, we aim to acknowledge receipt of a valid report within 2 weeks. and aim to provide a remediation plan or decision within 4 weeks. Actual fix time may be shorter or longer depending on severity, complexity, and scope.
 
 ## Scope & Threat Model
 
@@ -32,6 +30,8 @@ Out of scope:
 - Issues that can only be exploited when the underlying platform (browser, server runtime) is compromised
 - Using untrusted user content without sanitization in places that are not explicitly sanitized by the framework (for example in Svelte putting user content into `{@html ...}` is unsanitized, `{...}` is sanitized insofar as the content cannot alter the HTML structure to e.g. insert script tags)
 - Denial of service via excessive legitimate use
+- Issues only present in experimental features explicitly marked as such (e.g. where you have to opt in to them via a Svelte compiler flag)
+- Denial of service that is dev-time only, e.g. specific string handed to the Svelte compiler that take a long time to compile). Please report those as regular issues.
 
 ## Disclosure
 
