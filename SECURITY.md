@@ -15,7 +15,7 @@ To report a vulnerability, please privately report it on [Vercel's Open Source b
 
 If you report the vulnerability through HackerOne, the timelines mentioned there apply.
 
-If a security vulnerability is reported outside of this, we aim to acknowledge receipt of a valid report within 2 weeks. and aim to provide a remediation plan or decision within 4 weeks. Actual fix time may be shorter or longer depending on severity, complexity, and scope.
+If a security vulnerability is reported outside of this, we aim to acknowledge receipt of a valid report within 2 weeks, and aim to provide a remediation plan or decision within 4 weeks. Actual fix time may be shorter or longer depending on severity, complexity, and scope.
 
 ## Scope & Threat Model
 
@@ -31,7 +31,7 @@ Out of scope:
 - Using untrusted user content without sanitization in places that are not explicitly sanitized by the framework (for example in Svelte putting user content into `{@html ...}` is unsanitized, `{...}` is sanitized insofar as the content cannot alter the HTML structure to e.g. insert script tags)
 - Denial of service via excessive legitimate use
 - Issues only present in experimental features explicitly marked as such (e.g. where you have to opt in to them via a Svelte compiler flag)
-- Denial of service that is dev-time only, e.g. specific string handed to the Svelte compiler that take a long time to compile). Please report those as regular issues.
+- Denial of service that is dev-time only, e.g. specific string handed to the Svelte compiler that take a long time to compile. Please report those as regular issues.
 
 ## Disclosure
 
