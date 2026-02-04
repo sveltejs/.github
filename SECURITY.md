@@ -2,7 +2,14 @@
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, please privately report it on [Vercel's Open Source bounty program on HackerOne](https://hackerone.com/vercel-open-source). If that is not possible for some reason, you can use the security tab on the correct GitHub repository as a fallback ([see documentation](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability)), but it's not recommended (you'll get no bounty, for example). Do not open a public issue. Please refer to the Vercel Open Source program instruction for details. In general you need to provide:
+There are two ways to report a vulnerability:
+
+- [Vercel's Open Source bounty program on HackerOne](https://hackerone.com/vercel-open-source) **recommended**
+- The security tab on the GitHub repository in question ([see documentation](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability#privately-reporting-a-security-vulnerability)). Vulnerabilities disclosed via GitHub are not eligible for a bounty
+
+**Do not open a public issue.**
+
+Please refer to the [Vercel Open Source program instructions](https://hackerone.com/vercel-open-source) for details. In general you need to provide:
 
 - A clear description of the issue
 - Steps to reproduce
